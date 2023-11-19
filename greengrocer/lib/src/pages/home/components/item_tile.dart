@@ -31,11 +31,11 @@ class ItemTile extends StatelessWidget {
               borderRadius: BorderRadius.circular(20),
             ),
             child: Padding(
-              padding: EdgeInsets.all(12),
+              padding: const EdgeInsets.all(12),
               child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
                 // Imagem
                 Expanded(
-                  child: Image.asset(item.imgUrl),
+                  child: Hero(tag: item.imgUrl, child: Image.asset(item.imgUrl)),
                 ),
 
                 // Nome
