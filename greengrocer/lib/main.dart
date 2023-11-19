@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         // colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
         primarySwatch: Colors.green,
         scaffoldBackgroundColor: Colors.white.withAlpha(190),
-        useMaterial3: true,
+        useMaterial3: false,
       ),
       home: const SignInScreen(),
     );
