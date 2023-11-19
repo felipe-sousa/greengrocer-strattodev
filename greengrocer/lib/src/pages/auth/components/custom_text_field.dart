@@ -44,7 +44,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
                       isObscure = !isObscure;
                     });
                   },
-                  icon: Icon(Icons.visibility),
+                  icon: isObscure ? const Icon(Icons.visibility) : const Icon(Icons.visibility_off),
                 )
               : null,
           isDense: true,
